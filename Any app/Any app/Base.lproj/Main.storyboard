@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qa1-dd-ncz">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--About-->
+        <scene sceneID="jtL-0V-bfD">
+            <objects>
+                <viewController id="Vcj-C0-aNI" customClass="AboutViewController" customModule="Any_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y5G-aX-urx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z5B-ed-Kew"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ioc-by-sSI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hallo mijn naam is Robin, de maker van deze app. Sommigen vinden het" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pqi-N0-U9S">
+                                <rect key="frame" x="26" y="20" width="556" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dwergen in de schijf van 5." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyh-oo-ceO">
+                                <rect key="frame" x="26" y="92" width="205" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFu-Qx-VXt">
+                                <rect key="frame" x="26" y="210" width="78" height="40"/>
+                                <state key="normal" title="Paaseieren">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gVV-fj-ljt" kind="presentation" id="bOJ-Un-sva"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9T-et-p0g">
+                                <rect key="frame" x="16" y="134" width="118" height="30"/>
+                                <state key="normal" title="Show textfield"/>
+                                <connections>
+                                    <action selector="showTextfield:" destination="Vcj-C0-aNI" eventType="touchUpInside" id="o2g-sb-THf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="misschien een controversieel onderwerp, maar ik ben fel voor de invoering van " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yb3-0P-Fl8">
+                                <rect key="frame" x="26" y="55" width="606" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" id="n1S-oA-w0A"/>
+                    <connections>
+                        <outlet property="showTextField" destination="V9T-et-p0g" id="fYy-AV-bUc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PYU-Ed-bpI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="746" y="144"/>
+        </scene>
+        <!--Easter Egg View Controller-->
+        <scene sceneID="HZ2-mg-d6G">
+            <objects>
+                <viewController id="gVV-fj-ljt" customClass="EasterEggViewController" customModule="Any_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ldi-M9-JNW"/>
+                        <viewControllerLayoutGuide type="bottom" id="sPr-mP-VFc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jw6-kR-Xcf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="De dwergengenocide van 1788 leeft voort in ons collectief geheugen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUj-vU-9sS">
+                                <rect key="frame" x="16" y="15" width="525" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZy-E9-5mr">
+                                <rect key="frame" x="16" y="51" width="205" height="30"/>
+                                <state key="normal" title="Kijk weg van deze atrociteiten">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="kijkWeg:" destination="gVV-fj-ljt" eventType="touchUpInside" id="DhE-sF-c4w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n4Y-5M-rYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1482" y="118"/>
+        </scene>
+        <!--More Details View Controller-->
+        <scene sceneID="AZz-n2-Yo9">
+            <objects>
+                <viewController id="Pd2-V4-czp" customClass="MoreDetailsViewController" customModule="Any_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PEL-24-DtK"/>
+                        <viewControllerLayoutGuide type="bottom" id="uVJ-2U-dPS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="25a-Aq-XRr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="z9R-rH-1KS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PL7-1y-jbq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2150" y="819"/>
+        </scene>
+        <!--General-->
+        <scene sceneID="cPM-xk-5q6">
+            <objects>
+                <viewController id="72s-C5-CtN" customClass="GeneralViewController" customModule="Any_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TzO-ex-Ko9"/>
+                        <viewControllerLayoutGuide type="bottom" id="RFE-g2-wue"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a75-QM-2qw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ik eet graag dwergen voor onbijt" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oug-n2-22t">
+                                <rect key="frame" x="42" y="28" width="248" height="122"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vind je dit kunnen?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEU-3W-oID">
+                                <rect key="frame" x="42" y="203" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KA3-uo-Hs6">
+                                <rect key="frame" x="253" y="193" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ja" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjb-A5-6Pu">
+                                <rect key="frame" x="310" y="203" width="19" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpZ-vd-1bW">
+                                <rect key="frame" x="214" y="203" width="31" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="General" id="3pL-Y6-SCD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xvy-yf-6QM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="746" y="-554"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="aC9-3g-8me">
+            <objects>
+                <tabBarController id="qa1-dd-ncz" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="WOj-L3-h5u">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="72s-C5-CtN" kind="relationship" relationship="viewControllers" id="Rk5-Jg-qf9"/>
+                        <segue destination="Vcj-C0-aNI" kind="relationship" relationship="viewControllers" id="UoT-ZX-vAL"/>
+                        <segue destination="vrP-Yx-Ure" kind="relationship" relationship="viewControllers" id="Bj0-nc-qLg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xbK-U0-8kN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146" y="508"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="ydI-bR-TUk">
+            <objects>
+                <viewController id="SrV-YI-bjj" customClass="DetailsViewController" customModule="Any_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Par-Xf-MUh"/>
+                        <viewControllerLayoutGuide type="bottom" id="bjO-vS-aJD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wp9-9A-E84">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hoi" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="08I-Os-Zac">
+                                <rect key="frame" x="100" y="112" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCP-Gr-lGp">
+                                <rect key="frame" x="88" y="291" width="85" height="30"/>
+                                <state key="normal" title="Meer details">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Vhb-6s-SzF" kind="show" id="45R-9x-iID"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Flo-hM-2gc"/>
+                    <connections>
+                        <segue destination="Pd2-V4-czp" kind="push" id="kR9-bP-f1S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="84q-Li-0uR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1478" y="819"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vIn-S9-E2O">
+            <objects>
+                <viewController id="Vhb-6s-SzF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rUd-yt-RZv"/>
+                        <viewControllerLayoutGuide type="bottom" id="JhI-wY-nOU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="09g-ad-2ZO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gOz-tB-CXJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1478" y="1572"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="C0R-x2-lzx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vrP-Yx-Ure" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Details" id="zfV-ew-3ea"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KnY-fD-epb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SrV-YI-bjj" kind="relationship" relationship="rootViewController" id="5QV-zd-VGx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cX6-Ym-B6D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="746" y="829"/>
+        </scene>
+    </scenes>
+</document>
